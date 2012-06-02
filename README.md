@@ -19,6 +19,14 @@ The patch currently assumes that the source parameter to deftemplate and defsnip
 
 ## Usage
 
+Add the dependency:
+
+```clojure
+    [net.djpowell/reload-templates "0.1.0"]
+```
+
+Then use the middleware as below:
+
 ```clojure
     (-> handler
         (wrap-reload-templates [
